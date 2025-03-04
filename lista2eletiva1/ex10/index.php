@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 08</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
-
 <body>
-
     <form method="post">
         <div class="mb-3">
             <label for="n1" class="form-label">Insira o valor da altura</label>
@@ -26,8 +22,8 @@
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         $n1 = $_POST['altura'];
         $n2 = $_POST['largura'];
-        $area = $n1 * $n2;
-        echo "O area do retangulo é : $area ";
+        $perimetro = ($n1 * 2) + ($n2 * 2);
+        echo "O perimetro do retangulo é : $perimetro ";
     }
     ?>
 </body>
